@@ -18,6 +18,7 @@ import Dashboard from "./views/Clients/Dashboard";
 import Register from "./views/Access/Register";
 import CreateUser from "./views/Clients/CreateUsers";
 import InvoiceAdmin from "./views/invoices/InvoiceAdmin";
+import ExchangeRateAdmin from "./views/exchange_rate";
 import InvoicePaymentsConfirm from "./views/invoices/InvoicePaymentsConfirm";
 
 const App = () => {
@@ -92,6 +93,19 @@ const App = () => {
               <Landing />
             ) : currentUser.user_role === "AD" ? (
               <InvoiceAdmin />
+            ) : (
+              <InvoicePending />
+            )
+          }
+        />
+
+        <Route
+          path="/exchange"
+          element={
+            !isAuthenticated ? (
+              <Landing />
+            ) : currentUser.user_role === "AD" ? (
+              <ExchangeRateAdmin />
             ) : (
               <InvoicePending />
             )

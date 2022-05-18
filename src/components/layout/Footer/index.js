@@ -27,7 +27,7 @@ const Footer = ({ id = "footer" }) => {
           </IconContext.Provider>
 
           <WebsiteRights>
-            © 2021 - Desarrollado por Taguara Digital. Todos los derechos
+            © 2022 - Desarrollado por Taguara Digital. Todos los derechos
             reservados
           </WebsiteRights>
           <SocialIcons>

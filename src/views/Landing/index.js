@@ -1,4 +1,3 @@
-import React from "react";
 import { SliderData } from "../../data/SliderData";
 
 import Header from "../../components/layout/Header";
