@@ -14,7 +14,6 @@ const ChartInvoicesByMethod = ({ year = new Date().getFullYear() }) => {
     const fetchData = async (year) => {
       try {
         const response = await InvoicesFinder.paidByMethod(year);
-        console.log(response);
         const newData = [];
         const newLabels = [];
         response.data.invoices.map((payMethod) => {

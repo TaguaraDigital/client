@@ -62,7 +62,6 @@ const DepositPayment = ({ invoicesToPay, amount }) => {
 
   const onSubmit = (valores) => {
     setIsActButton(false);
-    console.log("datos validos");
     RegisterTransfer(valores, invoicesToPay, amount);
   };
 

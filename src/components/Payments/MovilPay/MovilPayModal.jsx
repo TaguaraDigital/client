@@ -41,7 +41,6 @@ const DepositPayment = ({ invoicesToPay, amount, show }) => {
   });
 
   const RegisterPagoMovil = async (valores, invoicesToPay) => {
-    console.log("valores que viene", { valores });
     try {
       const response = await InvoicesFinder.pagoMovil(
         invoicesToPay,

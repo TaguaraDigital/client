@@ -43,8 +43,6 @@ const ClientUpdate = () => {
     try {
       const response = await statesFinder.byCountry(country);
 
-      console.log("response.data", response.data);
-
       setStates(response.data);
     } catch (err) {
       console.log(err);
@@ -65,7 +63,6 @@ const ClientUpdate = () => {
           duration: 5000,
           position: "bottom-center",
         });
-        console.log("error en la actualizacion ", response);
       }
     } catch (err) {
       console.log(err.message);
